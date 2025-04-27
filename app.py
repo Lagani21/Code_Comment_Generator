@@ -12,7 +12,7 @@ st.sidebar.title("Settings")
 st.sidebar.info("This app uses **Groq's LLaMA 3** model to generate comments for your Python code!")
 
 # Select comment detail level
-comment_level = st.sidebar.selectbox(
+comment_level = st.sidebar.radio(
     "Select Comment Detail Level:",
     ("Beginner (Explain everything)", "Intermediate (Moderate explanations)", "Minimal (Quick clarifications)")
 )
@@ -45,7 +45,7 @@ with col2:
                 except Exception as e:
                     st.error(f"An error occurred: {e}")
     else:
-        st.text_area("Commented Code:", value="", height=400, label_visibility="collapsed")
+        st.text_area("Commented Code:", value="", height=400, label_visibility="collapsed", disabled=True)
 
 # Footer
 st.markdown("---")
