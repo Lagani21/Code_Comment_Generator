@@ -1,4 +1,4 @@
-# Python Code Comment Generator 🧠
+# Python Code Comment Generator 
 
 A simple Streamlit app that uses Groq's LLaMA 3 model to automatically add explanatory comments to Python code!
 
